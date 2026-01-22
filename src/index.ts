@@ -16,7 +16,7 @@ const cdpClient = new CdpClient({
         // 1. Setup Your Treasury Wallet
         // We use a persistent name so we get the same wallet every time.
         const ledgerAccount = await cdpClient.evm.getOrCreateAccount({
-            name: "techwithmide-0x"
+            name: "techwithmide-0x" // replace with your own (wallet) name
         });
 
         console.log(`\n🏦 Treasury Address: ${ledgerAccount.address}`);
